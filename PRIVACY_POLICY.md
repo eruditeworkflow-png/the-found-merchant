@@ -1,121 +1,67 @@
-# The Found Merchant Privacy Policy
+# Privacy Policy for The Found Merchant
 
-**Effective Date:** July 17, 2026
+**Effective date: October 31, 2026**
 
 ## Overview
 
-The Found Merchant is a Chrome extension that enhances supported D&D Beyond character sheets by providing a Dungeon Master-controlled merchant and inventory system for tabletop roleplaying campaigns.
+The Found Merchant is a private Chrome extension used to enhance a D&D Beyond campaign with synchronized merchant features and a shared combat initiative display on D&D Beyond character sheets.
 
-This Privacy Policy explains what information the extension uses, how it is used, and how it is stored.
+## Information the extension accesses
 
----
+When used on a supported D&D Beyond character sheet, the extension may read game-related character information displayed on that page, including the character name, portrait, race, class, level, currency, and inventory information needed to provide the merchant features.
 
-## Information Used by the Extension
+When used on a supported D&D Beyond Maps Spectator View, the extension may read the combat initiative tracker displayed on that page, including combatant names, portraits, initiative order, current-turn state, and the visual tracker information needed to reproduce the tracker on participating character sheets.
 
-To provide its functionality, The Found Merchant accesses game-related information displayed on supported D&D Beyond character sheets. This may include:
+The extension also processes campaign merchant settings, inventory, transaction information, storefront state, and extension preferences that are necessary to provide its features.
 
-- Character name
-- Character portrait
-- Race
-- Class
-- Level
-- Currency
-- Inventory
+The extension does not request or collect D&D Beyond passwords, payment-card information, or general web-browsing history.
 
-The extension also processes merchant information, storefront inventories, purchases, sales, receipts, and session ledger data created while using the extension.
+## How information is used
 
-The Found Merchant **does not collect** personal information such as:
+The accessed information is used only to provide The Found Merchant's campaign features, including displaying merchant storefronts, processing in-game purchases and currency updates, synchronizing merchant/session state, and displaying the current D&D Beyond combat initiative tracker on participating character sheets.
 
-- Name
-- Email address
-- Passwords
-- Financial or payment information
-- Browsing history
-- Location information
-- Personal communications
+Initiative information is hidden by default on a character sheet until the player chooses to show it. The player's show/hide preference is stored locally by the extension.
 
----
+## Storage and synchronization
 
-## How Information Is Used
+The extension uses Chrome extension storage for local extension settings and preferences.
 
-The information accessed by the extension is used solely to provide its merchant functionality, including:
+Campaign merchant/session information and the current combat initiative state are synchronized using Google Firebase Firestore so the Dungeon Master and participating players can share the same campaign state across supported D&D Beyond pages.
 
-- Identifying the active D&D Beyond character
-- Displaying available merchant inventories
-- Calculating purchases and sales
-- Tracking merchant inventory and storefront status
-- Synchronizing merchant sessions between the Dungeon Master and participating players
+The current initiative state is updated as combat changes and is used to provide the live initiative display; the extension is not designed to maintain a historical archive of initiative turns.
 
-The information is **not** used for advertising, analytics, profiling, or any purpose unrelated to the operation of the extension.
+Data transmitted to Firestore is sent over HTTPS.
 
----
+## Data sharing
 
-## Storage and Synchronization
+The Found Merchant does not sell user data and does not share user data with advertisers or data brokers.
 
-Extension preferences and local configuration are stored using Chrome Extension Storage.
+Data is shared only with service providers required to operate the extension, including Google Firebase/Firestore for synchronization, and only for the purposes described in this policy.
 
-Merchant inventories, storefront state, transaction history, and other campaign data may be synchronized using Google Firebase Firestore so that participating players and the Dungeon Master share the same shopping session.
+D&D Beyond is the source of the game information displayed on supported pages; The Found Merchant is not affiliated with or endorsed by D&D Beyond or Wizards of the Coast.
 
-Only the information necessary to operate the merchant system is synchronized.
+## Analytics and advertising
 
----
+The extension does not include advertising and does not use collected campaign data for advertising or cross-site tracking.
 
-## Data Sharing
+## Data retention
 
-The Found Merchant does not sell, rent, or transfer user information to third parties.
+Local extension settings remain in Chrome extension storage until they are changed, cleared, or the extension is removed.
 
-Information is shared only with Google Firebase/Firestore as required to synchronize merchant data between participants using the same campaign.
-
-Google processes Firebase/Firestore data in accordance with its own privacy policies.
-
----
-
-## Analytics and Advertising
-
-The Found Merchant does **not** include:
-
-- Advertising
-- Analytics
-- User tracking
-- Behavioral profiling
-- Marketing services
-
----
-
-## Data Retention
-
-Campaign data remains available until it is:
-
-- Deleted by the Dungeon Master
-- Removed from browser storage
-- Deleted from the associated Firebase/Firestore project
-
----
+Campaign data stored in Firestore is retained only as needed to operate the campaign features. Current initiative state is overwritten as combat state changes rather than being intentionally retained as a turn-by-turn history.
 
 ## Security
 
-Reasonable efforts are made to protect stored and transmitted information and to request only the permissions necessary for the extension's operation.
+The extension is designed to limit access to information needed for its campaign features and uses encrypted HTTPS connections when communicating with Firebase/Firestore.
 
-No method of electronic storage or transmission can be guaranteed to be completely secure.
+## Children's privacy
 
----
+The Found Merchant is not designed to knowingly collect personal information from children under 13. The extension processes game-related campaign information only as described above.
 
-## Children's Privacy
+## Changes to this policy
 
-The Found Merchant is intended for tabletop roleplaying participants and is not directed toward children under the age of 13.
-
-The extension does not knowingly collect personal information from children.
-
----
-
-## Changes to This Privacy Policy
-
-This Privacy Policy may be updated as the extension evolves.
-
-The Effective Date at the top of this document will be revised whenever material changes are made.
-
----
+This policy may be updated when The Found Merchant's features or data practices change. The effective date at the top of this policy will be updated when material changes are made.
 
 ## Contact
 
-Questions regarding this Privacy Policy may be directed to the extension developer through the contact information provided on the Chrome Web Store developer listing.
+Questions about this privacy policy may be submitted through the support/contact method provided on The Found Merchant's Chrome Web Store listing.
